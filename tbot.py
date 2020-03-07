@@ -81,7 +81,7 @@ def on_join_callback(update,context):
         username_id = join_user.id
 
         #Permited users list
-        #permited_users = ['@luizcruz0','@pabambino', '@Rbacarin', '@MeuDinheiro']
+        #permited_users = ['@luizcruz0', '@MeuDinheiro']
 
         if username_id not in permited_users:
                 context.bot.kickChatMember(chat_id, username_id, 30); 
